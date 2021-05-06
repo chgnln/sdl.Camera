@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(reqCode, resCode, data);
         if (reqCode == REQ_PHOTO) {
             if (resCode == RESULT_OK) {
-                Bitmap photoImage = (Bitmap) data.getExtras().get("data");
+                photoImage = (Bitmap) data.getExtras().get("data");
             }
         }
     }
